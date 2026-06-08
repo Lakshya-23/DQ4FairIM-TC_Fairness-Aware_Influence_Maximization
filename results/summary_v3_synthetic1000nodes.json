@@ -1,0 +1,89 @@
+{
+  "config": {
+    "graph_type": "hba",
+    "n_nodes": 300,
+    "budget": 10,
+    "phi": 1.0,
+    "n_episodes": 400,
+    "temporal_change": 0.02,
+    "step_change": 0.005,
+    "homophily": 0.75,
+    "minority_ratio": 0.15
+  },
+  "final_comparison": {
+    "Degree": {
+      "outreach": 0.5382,
+      "fairness": 0.5235,
+      "disparity": 0.0177,
+      "gini": 0.0083
+    },
+    "PageRank": {
+      "outreach": 0.5382,
+      "fairness": 0.5235,
+      "disparity": 0.0177,
+      "gini": 0.0083
+    },
+    "Parity": {
+      "outreach": 0.541,
+      "fairness": 0.5269,
+      "disparity": 0.0169,
+      "gini": 0.0079
+    },
+    "Fair-PageRank": {
+      "outreach": 0.541,
+      "fairness": 0.5269,
+      "disparity": 0.0169,
+      "gini": 0.0079
+    },
+    "DQ4FairIM-TC": {
+      "outreach": 0.5525,
+      "fairness": 0.5518,
+      "disparity": 0.0042,
+      "gini": 0.0019
+    }
+  },
+  "temporal_resilience": [
+    {
+      "rate": 0.0,
+      "outreach": 0.5526,
+      "fairness": 0.5513,
+      "disparity": 0.0015600000000000058,
+      "ds": 0.0
+    },
+    {
+      "rate": 0.002,
+      "outreach": 0.5468166666666666,
+      "fairness": 0.54562,
+      "disparity": 0.007179999999999964,
+      "ds": 0.0
+    },
+    {
+      "rate": 0.005,
+      "outreach": 0.5521166666666667,
+      "fairness": 0.5511,
+      "disparity": 0.006099999999999994,
+      "ds": 0.0
+    },
+    {
+      "rate": 0.01,
+      "outreach": 0.5559166666666666,
+      "fairness": 0.55288,
+      "disparity": 0.018220000000000014,
+      "ds": 30.0
+    },
+    {
+      "rate": 0.02,
+      "outreach": 0.5543166666666667,
+      "fairness": 0.5436,
+      "disparity": 0.06430000000000002,
+      "ds": 40.0
+    },
+    {
+      "rate": 0.05,
+      "outreach": 0.5534666666666667,
+      "fairness": 0.55044,
+      "disparity": 0.018159999999999954,
+      "ds": 60.0
+    }
+  ]
+}

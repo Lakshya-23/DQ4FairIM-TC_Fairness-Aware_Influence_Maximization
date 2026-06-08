@@ -1,0 +1,27 @@
+# DQ4FairIM-TC — Python dependencies
+# Python 3.9+ required
+# Install with: pip install -r requirements.txt
+
+# ── Core graph and scientific computing ────────────────────────────────────────
+networkx>=3.0          # Graph construction, PageRank, community detection
+numpy>=1.23            # Array operations, NumPy DQN backend
+scipy>=1.10            # Sparse matrices, statistical utilities
+
+# ── Deep learning (optional but strongly recommended — ~4× faster) ─────────────
+# Uncomment the line below or install separately:
+# torch>=2.0            # PyTorch DQN backend (GPU-accelerated)
+#
+# For GPU support, install the CUDA-specific build from https://pytorch.org/
+# e.g.: pip install torch --index-url https://download.pytorch.org/whl/cu118
+
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7        # Training curves, episode animation, comparison plots
+
+# ── Notebook support (only needed for Colab / Jupyter) ─────────────────────────
+# These are pre-installed in Colab; only needed for local Jupyter runs
+# jupyter>=1.0
+# ipywidgets>=8.0       # For live animation rendering via to_jshtml()
+
+# ── Optional: faster IC simulation ─────────────────────────────────────────────
+# ndlib>=5.1            # Alternative IC simulation library (not currently used)
